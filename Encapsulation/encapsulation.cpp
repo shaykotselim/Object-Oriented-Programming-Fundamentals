@@ -8,23 +8,30 @@ using namespace std;
         double salary;
 
     public:
+
         string name;
-        string dept;
         string subject;
-
-
+        string dept;
         //methods// memberFunctions
-        void changeDept (string newDept){
+
+
+       void changeDept (string newDept){
             dept = newDept;
-        }
+       }
+
+
         // setter function
+
         void setSalary (double newSalary){
             salary = newSalary;
         }
+
         //getter function
+
         double getSalary (){
             return salary;
         }
+
     };
     // Access Modifiers
     class Account{
@@ -37,15 +44,20 @@ using namespace std;
     };
 
 int main(){
-    Teacher t1;
-    t1.name = "Shaykot";
-    t1.dept = "Textile";
-    t1.changeDept("CSE");
-    t1.setSalary(25000);
+   // Teacher t1("Shaykot", "C++", "CSE", 25000); // constructor call
 
-    cout << t1.name <<endl;
-    cout << t1.dept <<endl;
-    cout << t1.getSalary();
+    Teacher t1;
+
+
+      t1.name = "Shaykot";
+      t1.subject = "C++";
+      t1.changeDept("CSE");
+      t1.setSalary(25000);
+
+      cout <<"Name:\t" << t1.name <<endl;
+      cout <<"Subj:\t" << t1.subject <<endl;
+      cout <<"Dept:\t"<< t1.dept <<endl;
+      cout <<"Salary:\t" << t1.getSalary();
 
     getch();
 }
@@ -66,6 +78,7 @@ int main(){
 
     Encapsulation:
     Encapsulation is wrapping up of data & member function in a single unit called class.
+
 
 */
 
