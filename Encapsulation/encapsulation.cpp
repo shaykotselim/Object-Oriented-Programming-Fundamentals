@@ -17,13 +17,23 @@ using namespace std;
         void changeDept (string newDept){
             dept = newDept;
         }
-
+        // setter function
         void setSalary (double newSalary){
             salary = newSalary;
         }
+        //getter function
         double getSalary (){
             return salary;
         }
+    };
+    // Access Modifiers
+    class Account{
+    private:  // using for data hiding
+        double balance;
+        string password;
+    public:
+        string accountID;
+        string userName;
     };
 
 int main(){
@@ -53,6 +63,9 @@ int main(){
     Private: data & methods accessible inside class.
     Public: data & method accessible to everyone.
     Protected: data & method accessible inside class & to its derived class.
+
+    Encapsulation:
+    Encapsulation is wrapping up of data & member function in a single unit called class.
 
 */
 
